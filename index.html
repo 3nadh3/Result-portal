@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px #ccc;
+			max-width: 500px;
+			margin: 20px auto;
+		}
+		h2 {
+			text-align: center;
+			margin-top: 0;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		select {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			font-size: 16px;
+			background-color: #fff;
+			resize: none;
+		}
+		select {
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23444' d='M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.error {
+			color: red;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+          }
+		@media screen and (max-width: 600px) {
+			form {
+				max-width: 100%;
+			}
+            a {
+                margin-top: 40px;
+              }
+		}
+        
+	</style>
+</head>
+<body>
+    <div class="container-lg">
+        <div class="row justify-content-center">
+            <img src="images/img.jpg" alt="sir CR Reddy college of enginerring" class="img-fluid m-3">
+        </div>
+    </div>
+    <br>
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<form method="post" action="connection.php">
+					<h2 class="mb-3 fw-bold"> RESULTS PORTAL</h2>
+                    <br>
+                    <div class="mb-3">
+						<label for="id" class="form-label">ID:</label>
+						<input type="text" id="id" name="id" class="form-control"  placeholder="Register number" required>
+					</div>
+					
+                    <div class="mb-3">
+                        <label for="Regulation" class=" form- label">Regulation:</label>
+                        <select name="Regulation" id="Regulation">
+                          <option value="r20">R20</option>
+                        	</select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Regulation" class=" form- label">Semester:</label>
+                      <select name="sem" id="sem">
+                        <option value="1-1" >1-1</option>
+                       </select>
+        
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Get the result</button>
+                    </div>
+                </form>
+            </div>
+            <br>
+        </body>
+        </html>
+					
